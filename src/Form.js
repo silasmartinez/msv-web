@@ -1,5 +1,7 @@
 import { Button, Paper, Typography } from "@material-ui/core";
 import { useForm } from "react-hook-form";
+import { Link } from "react-router-dom";
+
 import { FormInputText } from "./components/form/FormInputText";
 import { FormInputMultiCheckbox } from "./components/form/FormInputMultiCheckbox";
 import { FormInputDropdown } from "./components/form/FormInputDropdown";
@@ -64,6 +66,7 @@ export const Form = () => {
         {" "}
         Reset{" "}
       </Button>
+      <Link to="/">return</Link>
     </Paper>
   );
 };
